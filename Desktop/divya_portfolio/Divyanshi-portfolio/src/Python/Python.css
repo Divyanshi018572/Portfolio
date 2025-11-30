@@ -1,0 +1,103 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #0f0e0c; /* Darker shade for data science page */
+  color: white;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Navbar Styling */
+.ds-navbar {
+  width: 100%;
+  background: #1c1b19;  /* Slightly lighter background */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.ds-navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.ds-navbar ul li {
+  display: inline;
+}
+
+.ds-navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+.ds-navbar ul li a:hover {
+  color: #00bcd4; /* Light Blue Hover Effect */
+}
+
+/* Home Button */
+.ds-navbar .home-btn {
+  background: #00bcd4;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.ds-navbar .home-btn:hover {
+  background: #008c9e;
+}
+
+/* Title Section */
+.ds-title-box {
+  position: relative;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.ds-title-box h1 {
+  font-size: 50px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.ds-title-box img {
+  width: 140px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  z-index: -1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ds-navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .ds-navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ds-title-box h1 {
+    font-size: 36px;
+  }
+
+  .ds-title-box img {
+    width: 100px;
+    right: -30px;
+  }
+}

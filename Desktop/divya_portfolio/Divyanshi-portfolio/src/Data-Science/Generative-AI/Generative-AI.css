@@ -1,0 +1,62 @@
+.generative-ai-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #f3e5f5, #ce93d8);
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .generative-ai-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .generative-ai-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6a1b9a;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(106, 27, 154, 0.2);
+  }
+  
+  .generative-ai-container p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    font-weight: 500;
+    padding: 0 15px;
+  }
+  
+  .generative-ai-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+  }
+  
+  .generative-ai-container li {
+    font-size: 1.1rem;
+    color: #4a148c;
+    font-weight: bold;
+    padding: 5px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .generative-ai-container {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    .generative-ai-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .generative-ai-container p,
+    .generative-ai-container li {
+      font-size: 1rem;
+    }
+  }
+  

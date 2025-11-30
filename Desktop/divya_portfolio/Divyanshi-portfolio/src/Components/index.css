@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    min-height: 100vh;
+    background: #161513;
+    color: white;
+    font-family: 'outfit';
+  }
+  .title-box{
+    position: relative;
+  }
+  .title-box h1{
+    padding: 0px 30px;
+    font-size: 60px;
+    font-weight: 600;
+  }
+  .title-box img{
+    width: 160px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  @media(max-width: 768px){
+  
+    .about-title img{
+        width: 130px;
+        right: -20px;
+    }
+    .title-box h1{
+      padding: 0px;
+      font-size: 40px;
+    }
+    .title-box img{
+      width: 100px;
+      right: -40px;
+    }
+  }
+  
+  
+  
+  
+  
+/* For Extra Tools */
+
+
+
+
+/* Read More Button */
+.read-more {
+  display: inline-block;
+  padding: 6px 18px;  /* Slightly adjusted padding for balance */
+  font-size: 14px;  /* Small, but readable font */
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(90deg, #75d8a3, #c5d2ce);
+  border-radius: 50px;  /* Fully rounded button */
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 8px rgba(180, 21, 255, 0.25);
+}
+
+.read-more:hover {
+  background: linear-gradient(90deg, #DF8908 0%, #B415FF 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(180, 21, 255, 0.4);
+}
+
+.read-more:active {
+  transform: scale(0.98);
+}
+
+
+
+
+
+  
+  

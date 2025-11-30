@@ -1,0 +1,65 @@
+
+/* 
+  Add top padding to avoid overlap if you have a fixed navbar.
+  Adjust the values as needed for your layout.
+*/
+.basic-tools {
+  padding: 7rem 1rem 3rem; 
+  background: #f4f7fa; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section title */
+.basic-tools-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Grid layout for the tool cards */
+.tools-grid {
+  display: grid;
+  /* Each card grows/shrinks to fit, min width 280px, and as many as fit in a row */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card styling */
+.tool-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Icon styling */
+.tool-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: #4e54c8; /* Match or complement your navbar's gradient */
+}
+
+/* Headings within the card */
+.tool-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+/* Paragraph styling */
+.tool-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0;
+}

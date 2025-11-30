@@ -1,0 +1,71 @@
+/* main.css or App.css */
+
+/* 1. Basic Reset & Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 2. Global Body Styles */
+  html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa; /* Light background */
+    color: #333;              /* Default text color */
+  }
+  
+  /* 3. Anchor (Link) Styles */
+  a {
+    color: inherit;           /* Inherit text color by default */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #007bff;           /* Change link color on hover */
+  }
+  
+  /* 4. Headings */
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  /* 5. Paragraphs */
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: #555;              /* Slightly lighter than the default text color */
+  }
+  
+  /* 6. Utility Container (Centering Content) */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* 7. Buttons (Optional) */
+  button {
+    font-family: inherit;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* 8. Responsive Media Query (Optional) */
+  @media screen and (max-width: 768px) {
+    /* Example: reduce default font size on smaller screens */
+    body {
+      font-size: 0.95rem;
+    }
+  }
+  

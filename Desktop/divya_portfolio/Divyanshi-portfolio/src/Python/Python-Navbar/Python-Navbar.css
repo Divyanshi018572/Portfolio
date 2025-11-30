@@ -1,0 +1,146 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar wrapper with a modern gradient background */
+.navbar {
+  width: 100%;
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Inner container with more vertical padding for a heavier look */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* Increased padding to make the navbar taller */
+  padding: 1rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Left side: Home button with heavier appearance */
+.navbar-left .home-button {
+  background-color: #00bcd4;
+  color: #fff;
+  text-decoration: none;
+  /* Increase padding for a bigger button */
+  padding: 0.75rem 1.5rem;
+  font-weight: 700; /* Make it bold */
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-left .home-button:hover {
+  background-color: #0097a7;
+}
+
+/* Right side: horizontal list of nav items */
+.navbar-right {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative; /* For dropdown positioning */
+  margin-left: 1.5rem;
+}
+
+/* Top-level nav link with heavier styling */
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.125rem; /* Slightly larger text */
+  font-weight: 600;    /* Bold font weight */
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-link:hover {
+  color: #ffd700;
+}
+
+/* Icon spacing */
+.icon {
+  margin-left: 0.3rem;
+}
+
+/* Dropdown menu (hidden by default) */
+.dropdown {
+  position: absolute;
+  top: 3rem; /* Further below for a heavier nav */
+  left: 0;
+  background-color: #fff;
+  border-radius: 4px;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+/* Reveal dropdown on hover */
+.nav-item:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Dropdown links */
+.dropdown li {
+  list-style: none;
+}
+
+.dropdown li a {
+  display: block;
+  color: #333;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.dropdown li a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+  }
+  .navbar-left {
+    margin-bottom: 1rem;
+  }
+  .navbar-right {
+    flex-direction: column;
+  }
+  .nav-item {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+  .dropdown {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    background-color: #fff;
+    margin-top: 0.25rem;
+  }
+  .dropdown li a {
+    color: #333;
+  }
+}
